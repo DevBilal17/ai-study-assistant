@@ -8,7 +8,7 @@ const generateOTP = () => {
 const saveOTP = async (email, otp) => {
   await Otp.deleteMany({ email });
 
-  const expiresAt = new Date(Date.now() + 5 * 60 * 1000); 
+  const expiresAt = new Date(Date.now() + 5 * 60 * 1000); //After 5 minutes
 
   return await Otp.create({ email, otp, expiresAt });
 };
