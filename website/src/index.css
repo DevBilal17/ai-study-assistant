@@ -10,10 +10,12 @@
   /* Background colors */
   --color-background: var(--color-background-light);
   --color-background-secondary: var(--color-background-secondary-light);
+  --color-input-background: var(--color-input-light);
 
   /* Text colors */
   --color-foreground: var(--color-foreground-light);
   --color-foreground-muted: var(--color-foreground-muted-light);
+  --color-input-foreground: var(--color-input-foreground-light);
 
   /* Brand colors */
   --color-primary: var(--color-primary-light);
@@ -34,12 +36,14 @@
   /* Light mode (default) */
   :root {
     /* Backgrounds */
-    --color-background-light: #ffffff;
+    --color-background-light: #F7F9FB;
     --color-background-secondary-light: #f3f4f6;  /* gray-100 */
+    --color-input-light: #F0F4F7;  /* light gray for inputs */
 
     /* Text colors */
     --color-foreground-light: #111827;  /* gray-900 */
-    --color-foreground-muted-light: #6b7280;  /* gray-500 */
+    --color-foreground-muted-light: #596064;  
+    --color-input-foreground-light: #ACB3B7;  
 
     /* Brand colors */
     --color-primary-light: #3b82f6;  /* blue-500 */
@@ -60,6 +64,7 @@
     /* Backgrounds - darker shades */
     --color-background-light: #111827;  /* gray-900 */
     --color-background-secondary-light: #1f2937;  /* gray-800 */
+     --color-input-light: #F0F4F7;  /* light gray for inputs */
 
     /* Text colors - lighter for contrast */
     --color-foreground-light: #f9fafb;  /* gray-50 */
