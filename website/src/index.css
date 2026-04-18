@@ -1,1 +1,78 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Define your semantic color names using CSS variables */
+@theme {
+  /* Background colors */
+  --color-background: var(--color-background-light);
+  --color-background-secondary: var(--color-background-secondary-light);
+  
+  /* Text colors */
+  --color-foreground: var(--color-foreground-light);
+  --color-foreground-muted: var(--color-foreground-muted-light);
+  
+  /* Brand colors */
+  --color-primary: var(--color-primary-light);
+  --color-primary-hover: var(--color-primary-hover-light);
+  --color-secondary: var(--color-secondary-light);
+  
+  /* Border colors */
+  --color-border: var(--color-border-light);
+  
+  /* Status colors */
+  --color-success: var(--color-success-light);
+  --color-error: var(--color-error-light);
+  --color-warning: var(--color-warning-light);
+}
+
+/* Set the actual color values for light and dark modes */
+@layer base {
+  /* Light mode (default) */
+  :root {
+    /* Backgrounds */
+    --color-background-light: #ffffff;
+    --color-background-secondary-light: #f3f4f6;  /* gray-100 */
+    
+    /* Text colors */
+    --color-foreground-light: #111827;  /* gray-900 */
+    --color-foreground-muted-light: #6b7280;  /* gray-500 */
+    
+    /* Brand colors */
+    --color-primary-light: #3b82f6;  /* blue-500 */
+    --color-primary-hover-light: #2563eb;  /* blue-600 */
+    --color-secondary-light: #8b5cf6;  /* purple-500 */
+    
+    /* Borders */
+    --color-border-light: #e5e7eb;  /* gray-200 */
+    
+    /* Status */
+    --color-success-light: #10b981;  /* emerald-500 */
+    --color-error-light: #ef4444;  /* red-500 */
+    --color-warning-light: #f59e0b;  /* amber-500 */
+  }
+  
+  /* Dark mode - automatically applies when .dark class exists */
+  .dark {
+    /* Backgrounds - darker shades */
+    --color-background-light: #111827;  /* gray-900 */
+    --color-background-secondary-light: #1f2937;  /* gray-800 */
+    
+    /* Text colors - lighter for contrast */
+    --color-foreground-light: #f9fafb;  /* gray-50 */
+    --color-foreground-muted-light: #9ca3af;  /* gray-400 */
+    
+    /* Brand colors - slightly brighter for dark backgrounds */
+    --color-primary-light: #60a5fa;  /* blue-400 */
+    --color-primary-hover-light: #3b82f6;  /* blue-500 */
+    --color-secondary-light: #a78bfa;  /* purple-400 */
+    
+    /* Borders - subtle contrast */
+    --color-border-light: #374151;  /* gray-700 */
+    
+    /* Status - adjusted for dark mode */
+    --color-success-light: #34d399;  /* emerald-400 */
+    --color-error-light: #f87171;  /* red-400 */
+    --color-warning-light: #fbbf24;  /* amber-400 */
+  }
+}
