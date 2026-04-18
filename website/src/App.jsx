@@ -1,12 +1,16 @@
 import React from 'react'
 import { useTheme } from './hooks/useTheme';
+import { Route, Routes } from 'react-router-dom';
+import Login from './pages/Login';
 
 const App = () => {
   const {toggleTheme} = useTheme();
   return (
-    <div className="text-5xl bg-background">
-      App is running
-    </div>
+    <>
+      <Routes>
+        <Route path="/login" element={<Login/>} />
+      </Routes>
+    </>
   )
 }
 
