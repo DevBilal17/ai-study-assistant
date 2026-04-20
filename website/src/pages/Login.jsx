@@ -11,8 +11,8 @@ function Login() {
   return (
     <div className="flex md:justify-normal justify-center">
       {/* Left Side */}
-      <div className="w-1/2 h-screen md:block hidden relative ">
-        <img src={bgImage} className="w-full h-full object-cover backdrop-blur-xl" />
+      <div className="w-1/2  md:block hidden relative ">
+        <img src={bgImage} className="w-full min-h-screen object-fill backdrop-blur-xl" />
         <div className = "flex flex-col gap-6 absolute top-0 lg:m-24  md:m-16">
           <div className="flex gap-1">
             <img src={logo} className="" />
@@ -29,7 +29,7 @@ function Login() {
       </div>
 
       {/* Right Side */}
-      <div className="md:w-1/2 max-w-125 md:max-w-1/2 lg:p-24  md:p-16 sm:p-8 py-8 px-4">
+      <div className="md:w-1/2 max-w-125 md:max-w-1/2 lg:px-24  lg:py-16 md:p-16 sm:p-8 py-8 px-4">
         <h1 className="font-bold text-3xl mb-3">Welcome back</h1>
         <p className="font-medium text-base text-foreground-muted">
           Please enter your details to sign in.
