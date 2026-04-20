@@ -16,7 +16,7 @@ function Login() {
         <div className = "flex flex-col gap-6 absolute top-0 lg:m-24  md:m-16">
           <div className="flex gap-1">
             <img src={logo} className="" />
-            <h2 className="text-white font-semibold text-2xl leading-8 mt-2">Fluid Intelligence</h2>
+            <h2 className="text-white font-semibold text-2xl leading-8 mt-2">DocuMind AI</h2>
           </div>
           <div className="w-md flex flex-col gap-6">
             <h1 className="text-white font-bold text-5xl leading-16">Curation through <span className="text-[#4E45E4]">intelligence.</span> </h1>
