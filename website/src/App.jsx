@@ -11,6 +11,7 @@ import Document from './pages/Document';
 import Summary from './pages/Summary';
 import MCQs from './pages/MCQs';
 import Chat from './pages/Chat';
+import Workspace from './pages/Workspace';
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
         <Route path="summary" element={<Summary />} />
         <Route path="mcqs" element={<MCQs />} />
         <Route path="chat" element={<Chat />} />
+        <Route path="workspace/:docId" element={<Workspace />} />
       </Route>
       </Routes>
     </>

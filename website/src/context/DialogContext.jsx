@@ -4,7 +4,7 @@ import UploadDialog from "@/components/ui/UploadDialog";
 const DialogContext = createContext();
 
 export function DialogProvider({ children }) {
-  const [isUploadOpen, setIsUploadOpen] = useState(true);
+  const [isUploadOpen, setIsUploadOpen] = useState(false);
 
   const openUpload = () => setIsUploadOpen(true);
   const closeUpload = () => setIsUploadOpen(false);
